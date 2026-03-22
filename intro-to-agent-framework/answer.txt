@@ -1,0 +1,124 @@
+# Agentic AI Frameworks: Categories and Comparison
+
+## Why Frameworks Are Necessary for Building Agentic Systems
+
+Agentic AI frameworks provide essential infrastructure for:
+- Managing agent lifecycle and state
+- Handling tool/function calling and integration
+- Orchestrating multi-step workflows
+- Providing memory and context management
+- Simplifying prompt engineering and LLM interaction
+- Enabling scalability and reliability
+
+## Framework Categories
+
+### 1. Agent Orchestration Frameworks (Task-Focused)
+**LangChain**
+- General-purpose framework for LLM applications
+- Key: Chains, agents, and memory abstractions
+- Approach: Modular components with flexible composition
+- Best for: Quick prototyping and diverse use cases
+
+**LangGraph**
+- Graph-based workflow orchestration (built on LangChain)
+- Key: Cyclical, state-based agent flows
+- Approach: Explicit control flow with cycles and branches
+- Best for: Complex multi-step agents with loops
+
+**CrewAI**
+- Multi-agent collaboration framework
+- Key: Role-based agents, task delegation, shared memory
+- Approach: Team-oriented with autonomous agent coordination
+- Best for: Multi-agent systems and collaborative workflows
+
+### 2. Multi-Agent Platforms
+**AutoGen (Microsoft)**
+- Conversation-based multi-agent framework
+- Key: Agent roles, code execution, conversational loops
+- Approach: Agent conversations with human-in-the-loop
+- Best for: Complex reasoning and collaborative problem-solving
+
+**Google ADK (Agent Development Kit)**
+- Google's enterprise agent framework
+- Key: Integration with Google services, Gemini models
+- Approach: Cloud-native with built-in scalability
+- Best for: Enterprise solutions with Google ecosystem
+
+### 3. SDK/Runtime Frameworks
+**Vercel AI SDK**
+- Lightweight framework for AI applications
+- Key: Streaming responses, edge runtime support
+- Approach: Developer-friendly, minimal overhead
+- Best for: Web applications and real-time interactions
+
+**N8N**
+- Low-code/no-code workflow automation
+- Key: Visual workflow builder, 400+ integrations
+- Approach: Node-based graph editor (non-programming)
+- Best for: Business process automation without coding
+
+## Key Characteristics Comparison
+
+| Framework    | Agent State | Multi-Agent | Tool Integration | Learning Curve | Production Ready |
+|-------------|-------------|------------|-----------------|----------------|-----------------|
+| LangChain  | Simple      | Limited    | Excellent       | Low            | Yes             |
+| LangGraph  | Advanced    | Good       | Excellent       | Medium         | Yes             |
+| CrewAI     | Synchronous | Native     | Good            | Medium         | Moderate        |
+| AutoGen    | Complex     | Native     | Very Good       | Medium-High    | Research-Ready  |
+| Google ADK | Advanced    | Good       | Excellent       | Medium         | Yes             |
+| Vercel AI  | Minimal     | Limited    | Good            | Very Low       | Yes             |
+| N8N        | Stateless   | Limited    | Excellent       | None (Visual)  | Yes             |
+
+## Framework Selection Guide
+
+**Choose LangChain if:**
+- Building diverse LLM applications
+- Need flexibility and modularity
+- Starting new project with quick feedback
+
+**Choose LangGraph if:**
+- Require complex state management
+- Need explicit control flow and cycles
+- Building production agentic systems
+
+**Choose CrewAI if:**
+- Building multi-agent collaborative systems
+- Need role-based agent abstraction
+- Require autonomous agent delegation
+
+**Choose AutoGen if:**
+- Need advanced multi-agent reasoning
+- Want conversation-based architecture
+- Require human-in-the-loop collaboration
+
+**Choose Google ADK if:**
+- Working within Google Cloud ecosystem
+- Need enterprise-grade infrastructure
+- Using Gemini models
+
+**Choose Vercel AI if:**
+- Building web/real-time applications
+- Need minimal overhead and fast iteration
+- Edge runtime deployment required
+
+**Choose N8N if:**
+- Non-technical team members involved
+- Prefer visual workflow design
+- Rapid integration with third-party services
+
+## Selection Decision Tree
+
+1. Do you need visual/no-code? → N8N
+2. Is it a web/real-time app? → Vercel AI SDK
+3. Multi-agent collaboration needed? → CrewAI or AutoGen
+4. Complex workflows with state? → LangGraph
+5. Enterprise Google Cloud? → Google ADK
+6. General LLM application? → LangChain
+
+## Conclusion
+
+No single "best" framework exists. Selection depends on:
+- **Complexity**: Simple routing → LangChain; Complex cycles → LangGraph
+- **Team**: Non-technical → N8N; Developers → LangChain/LangGraph
+- **Scale**: Startup → Vercel AI; Enterprise → Google ADK/AutoGen
+- **Use Case**: Collaboration → CrewAI; General → LangChain
